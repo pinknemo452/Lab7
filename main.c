@@ -14,7 +14,7 @@ int main() {
 		statistic[myRand(&r) / 10000]++;
 	}
 	printf("0-9999: %d\n", statistic[0]);
-	for (int i = 1; i < 10; i++) {
+	for (int i = 1; i < 10; ++i) {
 		printf("%d - %d: %d\n", i*10000, (i+1)*10000-1, statistic[i]);
 	}
 	return 0;
