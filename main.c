@@ -12,10 +12,10 @@ int main() {
 	scanf("%d", &seed);
 	mySrand(seed);*/
 	for (int i = 0; i < 500000; ++i) {
-		statistic[myRand(&r) / 10000]++;
+		statistic[myRand(&r) / gap]++;
 	}
 	for (int i = 0; i < 10; ++i) {
-		printf("[%d .. %d): %d\n", i*10000, (i+1)*10000-1, statistic[i]);
+		printf("[%d .. %d): %d\n", i*gap, (i+1)*gap-1, statistic[i]);
 	}
 	return 0;
 }
