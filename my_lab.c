@@ -6,5 +6,5 @@ void mySrand(unsigned int x,unsigned int* r) {
 
 unsigned int myRand(unsigned int* r) {
 	*r = *r * 4231 + 12345;
-	return *r % 100000;
+	return *r % RAND_MOD;
 }

@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <time.h>
 #include "my_lab.h"
+#define gap 10000
 
 int main() { 
-	unsigned int statistic[10] = {0};
 	unsigned int r;
 	mySrand(time(NULL),&r);
+	unsigned int statistic[RAND_MOD/gap + 1] = { 0 };
 	/*printf("you can enter seed ");
 	int seed;
 	scanf("%d", &seed);
